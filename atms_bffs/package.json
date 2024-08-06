@@ -1,0 +1,26 @@
+{
+  "name": "ashish-rajat-rohan-rushabh",
+  "version": "1.0.0",
+  "description": "## Getting Started",
+  "main": "bff.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asu-cse578-s2024/Ashish-Rajat-Rohan-Rushabh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asu-cse578-s2024/Ashish-Rajat-Rohan-Rushabh/issues"
+  },
+  "homepage": "https://github.com/asu-cse578-s2024/Ashish-Rajat-Rohan-Rushabh#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "axios": "^1.6.8",
+    "jest": "^29.7.0"
+  }
+}

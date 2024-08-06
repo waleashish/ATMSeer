@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ATMSeer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #hyperparameters-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            /* Adjust the minmax values as needed */
+            grid-template-rows: auto auto;
+            /* Two rows: one for scatter plots, one for density plots */
+            gap: 20px;
+            /* Adjust the gap between grid items as needed */
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="my_dataviz"></div>
+    <div id="hyperparameters-container">
+    </div>
+    <div class="container-fluid">
+        <div class="tab-container row justify-content-center mt-3">
+            <div id="tab1" class="tab col-6 col-md-4">
+                <button id="dataButton" onclick="switchTab('tab1')" class="btn btn-primary btn-block">Data View</button>
+            </div>
+            <div id="tab2" class="tab col-6 col-md-4">
+                <button id="overviewButton" onclick="switchTab('tab2')" class="btn btn-primary btn-block">Overview
+                    View</button>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <div id="dataView" class="hide">
+                    <div id="content1" class="content">
+                        <h2>Data View</h2>
+                        <div id="summary"></div>
+                        <div id="charts"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-8">
+                <div id="overviewView">
+
+                    <div id="content2" class="content">
+                        <h2>Overview View</h2>
+                        <h2 class="text-center mt-4">Top N Classifiers</h2>
+                        <form id="topNForm" class="text-center">
+                            <label for="topN">Enter value for N:</label>
+                            <input type="number" id="topN" name="topN" min="1" value="5">
+                            <input type="submit" value="Show Top Classifiers" class="btn btn-primary">
+                        </form>
+                        <div id="barPlot"></div>
+                        <div id="bar-chart"></div>
+                        <div id="topClassifiers" class="container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+
+</html>

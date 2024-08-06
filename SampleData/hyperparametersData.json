@@ -1,0 +1,6030 @@
+[
+    {
+        "categoricals": {
+            "criterion": "entropy"
+        },
+        "constant": {
+            "n_estimators": 100,
+            "n_jobs": -1
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "rf-entropy",
+        "id": 1,
+        "method": "rf",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "criterion": "gini"
+        },
+        "constant": {
+            "n_estimators": 100,
+            "n_jobs": -1
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "rf-gini",
+        "id": 2,
+        "method": "rf",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "minkowski",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-ball_tree-minkowski",
+        "id": 3,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "euclidean",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-ball_tree-euclidean",
+        "id": 4,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "manhattan",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-ball_tree-manhattan",
+        "id": 5,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "chebyshev",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-ball_tree-chebyshev",
+        "id": 6,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "minkowski",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-kd_tree-minkowski",
+        "id": 7,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "euclidean",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-kd_tree-euclidean",
+        "id": 8,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "manhattan",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-kd_tree-manhattan",
+        "id": 9,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "chebyshev",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-kd_tree-chebyshev",
+        "id": 10,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "minkowski",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-brute-minkowski",
+        "id": 11,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "euclidean",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-brute-euclidean",
+        "id": 12,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "manhattan",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-brute-manhattan",
+        "id": 13,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "chebyshev",
+            "weights": "uniform"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-uniform-brute-chebyshev",
+        "id": 14,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "minkowski",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-ball_tree-minkowski",
+        "id": 15,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "euclidean",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-ball_tree-euclidean",
+        "id": 16,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "manhattan",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-ball_tree-manhattan",
+        "id": 17,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "ball_tree",
+            "metric": "chebyshev",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-ball_tree-chebyshev",
+        "id": 18,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "minkowski",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-kd_tree-minkowski",
+        "id": 19,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "euclidean",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-kd_tree-euclidean",
+        "id": 20,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "manhattan",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-kd_tree-manhattan",
+        "id": 21,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "kd_tree",
+            "metric": "chebyshev",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-kd_tree-chebyshev",
+        "id": 22,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "leaf_size": {
+                "range": [
+                    1,
+                    50
+                ],
+                "type": "int"
+            },
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "minkowski",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-brute-minkowski",
+        "id": 23,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            },
+            "p": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "euclidean",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-brute-euclidean",
+        "id": 24,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "manhattan",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-brute-manhattan",
+        "id": 25,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "algorithm": "brute",
+            "metric": "chebyshev",
+            "weights": "distance"
+        },
+        "constant": {
+            "_scale": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "knn-distance-brute-chebyshev",
+        "id": 26,
+        "method": "knn",
+        "status": "incomplete",
+        "tunables": {
+            "n_neighbors": {
+                "range": [
+                    1,
+                    20
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "rbf"
+        },
+        "constant": {
+            "_scale": true,
+            "cache_size": 15000,
+            "class_weight": "balanced",
+            "max_iter": 50000,
+            "probability": true,
+            "shrinking": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "svm-rbf",
+        "id": 27,
+        "method": "svm",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "gamma": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "poly"
+        },
+        "constant": {
+            "_scale": true,
+            "cache_size": 15000,
+            "class_weight": "balanced",
+            "max_iter": 50000,
+            "probability": true,
+            "shrinking": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "svm-poly",
+        "id": 28,
+        "method": "svm",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "coef0": {
+                "range": [
+                    -1000,
+                    1000
+                ],
+                "type": "int"
+            },
+            "degree": {
+                "range": [
+                    2,
+                    5
+                ],
+                "type": "int"
+            },
+            "gamma": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "linear"
+        },
+        "constant": {
+            "_scale": true,
+            "cache_size": 15000,
+            "class_weight": "balanced",
+            "max_iter": 50000,
+            "probability": true,
+            "shrinking": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "svm-linear",
+        "id": 29,
+        "method": "svm",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "sigmoid"
+        },
+        "constant": {
+            "_scale": true,
+            "cache_size": 15000,
+            "class_weight": "balanced",
+            "max_iter": 50000,
+            "probability": true,
+            "shrinking": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "svm-sigmoid",
+        "id": 30,
+        "method": "svm",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "coef0": {
+                "range": [
+                    -1000,
+                    1000
+                ],
+                "type": "int"
+            },
+            "gamma": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "criterion": "entropy"
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "dt-entropy",
+        "id": 31,
+        "method": "dt",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            },
+            "min_samples_split": {
+                "range": [
+                    2,
+                    4
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "criterion": "gini"
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "dt-gini",
+        "id": 32,
+        "method": "dt",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    3
+                ],
+                "type": "int"
+            },
+            "min_samples_split": {
+                "range": [
+                    2,
+                    4
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": 0,
+            "loss": "hinge"
+        },
+        "constant": {
+            "_scale": true,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "pa-hinge",
+        "id": 33,
+        "method": "pa",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    0.015848931924611148,
+                    37.34417765326839
+                ],
+                "type": "float_exp"
+            },
+            "n_iter": {
+                "range": [
+                    32,
+                    126
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": 0,
+            "loss": "squared_hinge"
+        },
+        "constant": {
+            "_scale": true,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "pa-squared_hinge",
+        "id": 34,
+        "method": "pa",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    0.015848931924611148,
+                    37.34417765326839
+                ],
+                "type": "float_exp"
+            },
+            "n_iter": {
+                "range": [
+                    32,
+                    126
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": 1,
+            "loss": "hinge"
+        },
+        "constant": {
+            "_scale": true,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "pa-hinge",
+        "id": 35,
+        "method": "pa",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    0.015848931924611148,
+                    37.34417765326839
+                ],
+                "type": "float_exp"
+            },
+            "n_iter": {
+                "range": [
+                    32,
+                    126
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": 1,
+            "loss": "squared_hinge"
+        },
+        "constant": {
+            "_scale": true,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "pa-squared_hinge",
+        "id": 36,
+        "method": "pa",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    0.015848931924611148,
+                    37.34417765326839
+                ],
+                "type": "float_exp"
+            },
+            "n_iter": {
+                "range": [
+                    32,
+                    126
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": true,
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l1-fit_intercept",
+        "id": 37,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "fit_intercept": false,
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l1-fit_intercept",
+        "id": 38,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "dual": true,
+            "fit_intercept": true,
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l2-fit_intercept-dual",
+        "id": 39,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "dual": false,
+            "fit_intercept": true,
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l2-fit_intercept-dual",
+        "id": 40,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "dual": true,
+            "fit_intercept": false,
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l2-fit_intercept-dual",
+        "id": 41,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "dual": false,
+            "fit_intercept": false,
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale": true,
+            "class_weight": "balanced"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "logreg-l2-fit_intercept-dual",
+        "id": 42,
+        "method": "logreg",
+        "status": "incomplete",
+        "tunables": {
+            "C": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "tol": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {},
+        "constant": {
+            "_scale": true,
+            "class_prior": null
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "bnb",
+        "id": 43,
+        "method": "bnb",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "binarize": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "fit_prior": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-relu-1_hidden_layer",
+        "id": 44,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-relu-2_hidden_layer",
+        "id": 45,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-relu-3_hidden_layer",
+        "id": 46,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-logistic-1_hidden_layer",
+        "id": 47,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-logistic-2_hidden_layer",
+        "id": 48,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-logistic-3_hidden_layer",
+        "id": 49,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-identity-1_hidden_layer",
+        "id": 50,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-identity-2_hidden_layer",
+        "id": 51,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-identity-3_hidden_layer",
+        "id": 52,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-tanh-1_hidden_layer",
+        "id": 53,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-tanh-2_hidden_layer",
+        "id": 54,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "lbfgs"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-lbfgs-tanh-3_hidden_layer",
+        "id": 55,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-1_hidden_layer-constant",
+        "id": 56,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-1_hidden_layer-invscaling",
+        "id": 57,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-1_hidden_layer-adaptive",
+        "id": 58,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-2_hidden_layer-constant",
+        "id": 59,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-2_hidden_layer-invscaling",
+        "id": 60,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-2_hidden_layer-adaptive",
+        "id": 61,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-3_hidden_layer-constant",
+        "id": 62,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-3_hidden_layer-invscaling",
+        "id": 63,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-relu-3_hidden_layer-adaptive",
+        "id": 64,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-1_hidden_layer-constant",
+        "id": 65,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-1_hidden_layer-invscaling",
+        "id": 66,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-1_hidden_layer-adaptive",
+        "id": 67,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-2_hidden_layer-constant",
+        "id": 68,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-2_hidden_layer-invscaling",
+        "id": 69,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-2_hidden_layer-adaptive",
+        "id": 70,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-3_hidden_layer-constant",
+        "id": 71,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-3_hidden_layer-invscaling",
+        "id": 72,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-logistic-3_hidden_layer-adaptive",
+        "id": 73,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-1_hidden_layer-constant",
+        "id": 74,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-1_hidden_layer-invscaling",
+        "id": 75,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-1_hidden_layer-adaptive",
+        "id": 76,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-2_hidden_layer-constant",
+        "id": 77,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-2_hidden_layer-invscaling",
+        "id": 78,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-2_hidden_layer-adaptive",
+        "id": 79,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-3_hidden_layer-constant",
+        "id": 80,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-3_hidden_layer-invscaling",
+        "id": 81,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-identity-3_hidden_layer-adaptive",
+        "id": 82,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-1_hidden_layer-constant",
+        "id": 83,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-1_hidden_layer-invscaling",
+        "id": 84,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-1_hidden_layer-adaptive",
+        "id": 85,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-2_hidden_layer-constant",
+        "id": 86,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-2_hidden_layer-invscaling",
+        "id": 87,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-2_hidden_layer-adaptive",
+        "id": 88,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "constant",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-3_hidden_layer-constant",
+        "id": 89,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "invscaling",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-3_hidden_layer-invscaling",
+        "id": 90,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "learning_rate": "adaptive",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "sgd"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-sgd-tanh-3_hidden_layer-adaptive",
+        "id": 91,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-relu-1_hidden_layer",
+        "id": 92,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-relu-2_hidden_layer",
+        "id": 93,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "relu",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-relu-3_hidden_layer",
+        "id": 94,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-logistic-1_hidden_layer",
+        "id": 95,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-logistic-2_hidden_layer",
+        "id": 96,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "logistic",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-logistic-3_hidden_layer",
+        "id": 97,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-identity-1_hidden_layer",
+        "id": 98,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-identity-2_hidden_layer",
+        "id": 99,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "identity",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-identity-3_hidden_layer",
+        "id": 100,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 1,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-tanh-1_hidden_layer",
+        "id": 101,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 2,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-tanh-2_hidden_layer",
+        "id": 102,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "activation": "tanh",
+            "len(hidden_layer_sizes)": 3,
+            "solver": "adam"
+        },
+        "constant": {
+            "_scale": "True",
+            "batch_size": "auto"
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mlp-adam-tanh-3_hidden_layer",
+        "id": 103,
+        "method": "mlp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0001,
+                    0.009
+                ],
+                "type": "float"
+            },
+            "beta_1": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "beta_2": {
+                "range": [
+                    0.8,
+                    0.9999
+                ],
+                "type": "float"
+            },
+            "hidden_layer_sizes[0]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[1]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "hidden_layer_sizes[2]": {
+                "range": [
+                    2,
+                    300
+                ],
+                "type": "int"
+            },
+            "learning_rate_init": {
+                "range": [
+                    0.001,
+                    0.99
+                ],
+                "type": "float"
+            }
+        }
+    },
+    {
+        "categoricals": {},
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "ada",
+        "id": 104,
+        "method": "ada",
+        "status": "incomplete",
+        "tunables": {
+            "learning_rate": {
+                "range": [
+                    0.5,
+                    10.0
+                ],
+                "type": "float"
+            },
+            "n_estimators": {
+                "range": [
+                    25,
+                    500
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {},
+        "constant": {
+            "_scale_minmax": true,
+            "class_prior": null
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "mnb",
+        "id": 105,
+        "method": "mnb",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "fit_prior": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "constant"
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-constant",
+        "id": 106,
+        "method": "gp",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "kernel": "rbf"
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-rbf",
+        "id": 107,
+        "method": "gp",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "kernel": "matern",
+            "nu": 0.5
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-matern",
+        "id": 108,
+        "method": "gp",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "kernel": "matern",
+            "nu": 1.5
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-matern",
+        "id": 109,
+        "method": "gp",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "kernel": "matern",
+            "nu": 2.5
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-matern",
+        "id": 110,
+        "method": "gp",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "kernel": "rational_quadratic"
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-rational_quadratic",
+        "id": 111,
+        "method": "gp",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "length_scale": {
+                "range": [
+                    0.01,
+                    100.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "exp_sine_squared",
+            "periodicity": 0
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-exp_sine_squared",
+        "id": 112,
+        "method": "gp",
+        "status": "incomplete",
+        "tunables": {
+            "length_scale": {
+                "range": [
+                    0.01,
+                    100.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "kernel": "exp_sine_squared",
+            "periodicity": 1
+        },
+        "constant": {},
+        "datarun_id": 1,
+        "hyperpartition_string": "gp-exp_sine_squared",
+        "id": 113,
+        "method": "gp",
+        "status": "incomplete",
+        "tunables": {
+            "length_scale": {
+                "range": [
+                    0.01,
+                    100.0
+                ],
+                "type": "float_exp"
+            }
+        }
+    },
+    {
+        "categoricals": {},
+        "constant": {
+            "_scale_minmax": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "gnb",
+        "id": 114,
+        "method": "gnb",
+        "status": "gridding_done",
+        "tunables": {}
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "hinge",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-l1-constant",
+        "id": 115,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "hinge",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-l1-optimal",
+        "id": 116,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "hinge",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-l2-constant",
+        "id": 117,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "hinge",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-l2-optimal",
+        "id": 118,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "hinge",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-elasticnet-constant",
+        "id": 119,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "hinge",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-hinge-elasticnet-optimal",
+        "id": 120,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "log",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-l1-constant",
+        "id": 121,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "log",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-l1-optimal",
+        "id": 122,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "log",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-l2-constant",
+        "id": 123,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "log",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-l2-optimal",
+        "id": 124,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "log",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-elasticnet-constant",
+        "id": 125,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "log",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-log-elasticnet-optimal",
+        "id": 126,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "modified_huber",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-l1-constant",
+        "id": 127,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "modified_huber",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-l1-optimal",
+        "id": 128,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "modified_huber",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-l2-constant",
+        "id": 129,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "modified_huber",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-l2-optimal",
+        "id": 130,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "modified_huber",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-elasticnet-constant",
+        "id": 131,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "modified_huber",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-modified_huber-elasticnet-optimal",
+        "id": 132,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "squared_hinge",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-l1-constant",
+        "id": 133,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "squared_hinge",
+            "penalty": "l1"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-l1-optimal",
+        "id": 134,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "squared_hinge",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-l2-constant",
+        "id": 135,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "squared_hinge",
+            "penalty": "l2"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-l2-optimal",
+        "id": 136,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "constant",
+            "loss": "squared_hinge",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-elasticnet-constant",
+        "id": 137,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "learning_rate": "optimal",
+            "loss": "squared_hinge",
+            "penalty": "elasticnet"
+        },
+        "constant": {
+            "_scale_minmax": true,
+            "class_weight": null,
+            "n_jobs": -1,
+            "shuffle": true
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "sgd-squared_hinge-elasticnet-optimal",
+        "id": 138,
+        "method": "sgd",
+        "status": "incomplete",
+        "tunables": {
+            "alpha": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "epsilon": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "eta0": {
+                "range": [
+                    1e-05,
+                    100000.0
+                ],
+                "type": "float_exp"
+            },
+            "fit_intercept": {
+                "range": [
+                    0,
+                    1
+                ],
+                "type": "int"
+            },
+            "l1_ratio": {
+                "range": [
+                    0.0,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "n_iter": {
+                "range": [
+                    10,
+                    200
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "criterion": "entropy"
+        },
+        "constant": {
+            "n_estimators": 100,
+            "n_jobs": -1
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "et-entropy",
+        "id": 139,
+        "method": "et",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    2
+                ],
+                "type": "int"
+            }
+        }
+    },
+    {
+        "categoricals": {
+            "criterion": "gini"
+        },
+        "constant": {
+            "n_estimators": 100,
+            "n_jobs": -1
+        },
+        "datarun_id": 1,
+        "hyperpartition_string": "et-gini",
+        "id": 140,
+        "method": "et",
+        "status": "incomplete",
+        "tunables": {
+            "max_depth": {
+                "range": [
+                    2,
+                    10
+                ],
+                "type": "int"
+            },
+            "max_features": {
+                "range": [
+                    0.1,
+                    1.0
+                ],
+                "type": "float"
+            },
+            "min_samples_leaf": {
+                "range": [
+                    1,
+                    2
+                ],
+                "type": "int"
+            }
+        }
+    }
+]
